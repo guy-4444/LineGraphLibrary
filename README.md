@@ -49,7 +49,7 @@ Add the dependency to your module-level `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.user:CleanGraph:1.0.0")
+    implementation("com.github.guy-4444:LineGraphLibrary:1.00.01")
 }
 ```
 
