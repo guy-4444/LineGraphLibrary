@@ -7,7 +7,7 @@ A lightweight, beautiful, clean graph library for Android Jetpack Compose.
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/simple_line_chart.png" alt="Simple Line Chart" />
+  <img src="screenshots/simple_line_chart.png" width="280" alt="Simple Line Chart" />
   <img src="screenshots/area_chart.png" width="280" alt="Area Chart" />
   <img src="screenshots/sparklines.png" width="280" alt="Sparklines" />
 </p>
