@@ -1,3 +1,55 @@
+```mermaid
+erDiagram
+    USER ||--o{ PLAYLIST : creates
+    USER ||--o{ PLAY_HISTORY : listens
+    PLAYLIST ||--o{ PLAYLIST_TRACK : contains
+    TRACK ||--o{ PLAYLIST_TRACK : appears_in
+    ARTIST ||--o{ ALBUM : releases
+    ALBUM ||--o{ TRACK : contains
+    ARTIST ||--o{ TRACK : performs
+
+    USER {
+        int user_id
+        string name
+        string email
+    }
+
+    PLAYLIST {
+        int playlist_id
+        string title
+        boolean is_public
+    }
+
+    TRACK {
+        int track_id
+        string title
+        int duration_seconds
+    }
+
+    ARTIST {
+        int artist_id
+        string name
+    }
+
+    ALBUM {
+        int album_id
+        string title
+        int release_year
+    }
+
+    PLAYLIST_TRACK {
+        int playlist_id
+        int track_id
+    }
+
+    PLAY_HISTORY {
+        int history_id
+        int user_id
+        int track_id
+        datetime played_at
+    }
+```
+
 # CleanGraph
 
 A lightweight, beautiful, clean graph library for Android Jetpack Compose.
